@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #182b3a;
+    overflow: auto;
+}
+
+.header{
+    background-color: #08151d;
+    padding: 25px 20px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.error{
+    color: #fff;
+    text-align: center;
+}
+
+.continent-title{
+    font-size: 20px;
+    color: #fff;
+}
+.countries-title{
+    font-size: 16px;
+    color: #fff;
+    width: 80%;
+    margin: 60px auto 0px auto;
+}
+.content-wrapper{
+    padding: 30px 20px;
+}
+.list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .list{
+        flex-wrap: wrap;
+    }
+    .countries{
+        width: 100%;
+    }
+}
+
+.list-item{
+    padding: 15px 20px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+.list-item.active {
+    background: rgb(15, 32, 45);
+    border-radius: 4px;
+    color: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgb(9, 20, 28);
+}
+
+.countries{
+    background: rgb(23, 43, 58);
+    border: 1px solid rgb(9, 20, 28);
+    border-radius: 4px;
+    overflow: auto;
+    max-height: 560px;
+    display: block;
+    width: 80%;
+    margin: 40px auto 0 auto;
+}
+
+.countries .list-item{
+    border-bottom: 1px solid rgb(9, 20, 28);
+}
